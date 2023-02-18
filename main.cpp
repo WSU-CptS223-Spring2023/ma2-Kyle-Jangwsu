@@ -5,7 +5,18 @@ int main(){
 
 	/* MA TODO: Implement */
 	/* Create a BST string tree (bst_test) ; add the following string values to the bst_test in order: "C", "p", "t", "s", "2", "3" , "B", "S", "T"*/
+    BST<string> bst_test = BST<string>();
+    bst_test.add("c");
+    bst_test.add("p");
+    bst_test.add("t");
+    bst_test.add("s");
+    bst_test.add("2");
+    bst_test.add("3");
+    bst_test.add("B");
+    bst_test.add("S");
+    bst_test.add("T");
 
+    
 	/* MA TODO: Implement */
 	// Test1: Test printLevelOrder()
 	/* Print the tree you created using
@@ -13,7 +24,10 @@ int main(){
 	    a. Level-order print
 	    a. Post-order print
 	    a. Pre-order print */
-
+bst_test.printInOrder();
+bst_test.printLevelOrder();
+bst_test.printPostOrder();
+bst_test.printPreOrder();
 
 	/* MA TODO: Implement */
 	// Test2: Test copy constructor -1
